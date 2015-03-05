@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Booster Fuel</title>
+
+		<!-- <css> -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="avenir/avenir.css"> 
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/modernizr.js"></script>
+	</head>
+ 
+	<body>
+		<nav>
+            <ul>
+                <li id="logo"><a href="#landing"><img src="img/landing/sm-logo.png"/></a></li>
+                <li>
+                	<label id="cart-icon" for="showForm" class="showFormLabel">
+                		<ul>
+	                		<li><span class="icon-cart"></span><li>
+	                			<li><p>Cart</p></li>
+	                		<li><span class="simpleCart_quantity"></span></li>
+	                		<li><span id="triangle"></span></li>
+                		</ul>
+                	</label>
+                </li>
+                <div id="nav" class="row">
+                	<ul>
+                        <li id="nav-fuel" class="nav-item"><a href="#fuel">The Fuel</a></li>
+                        <li id="nav-good" class="nav-item"><a href="#good">The good</a></li>
+                        <li id="nav-coffee" class="nav-item"><a href="#coffee">Coffee</a></li>
+                        <li id="nav-kits" class="nav-item"><a href="#kits">Kits</a></li>
+                        <li id="nav-how" class="nav-item"><a href="#instructions">How To</a></li>
+                    </ul>
+                </div><!-- end row -->
+            </ul>
+        </nav>
+
+        <div class="modal-bg"></div><!-- modal transparent background -->
+        <input type="checkbox" name="showForm" id="showForm" class="showForm">
+
+        <div class="form">
+        	<div id="form-content">
+	            <span class="simpleCart_items"></span>
+	            <label for="showForm" class="closeFormLabel">X</label>
+	            <!--<button type="submit" id="remove-button" class="sendForm">Remove</button>-->
+
+	            <form id="cart-form">
+	                    <h5>Your Information</h5>
+	                    <input type="text" name="name" placeholder="Your name" required>
+	                    <input type="email" name="email" placeholder="Your email" required>
+
+	                <span>TOTAL:                
+                    	<h5 class="simpleCart_total"></h5>
+                	</span>
+	                
+	                <button type="submit" href="javascript:;" class="simpleCart_checkout" id="checkout-button" class="sendForm"><span class="icon-checkmark"></span>Checkout</button>
+	                <button type="submit" href="javascript:;" class="simpleCart_empty" id="empty-button" class="sendForm"><span class="icon-trash"></span>Empty Cart</button>
+	            </form>
+
+	            <h5>Your coffee will be avalible every Thursday for pick-up</h5>
+	        </div>
+        </div>
+
+        <!-- Hamburger mobile menu -->
+        <div id="menu-open" class="ui button-square"> 
+			<span id="icon-toggle" class="icon-box-toggle ef-1"> 	
+				<i class="icon-line-top"></i>
+				<i class="icon-line-center"></i>
+				<i class="icon-line-bottom"></i> 
+			</span>
+		</div>
+
+			<div class="menu-main-wrap">  
+
+				<ul class="ui menu menu-effect_1"> 
+					<div id="cart-wrapper">
+						<li id="mobile-cart">
+		                	<label id="cart-icon" for="showForm" class="showFormLabel">
+		                		<ul>
+			                		<li><span class="icon-cart"></span><li>
+			                		<li><p>Cart</p></li>
+			                		<li><span class="simpleCart_quantity"></span></li>
+			                		<li><span id="triangle"></span></li>
+		                		</ul>
+		                	</label>
+		                </li>
+		            </div>
+
+					<li class="move-up"><a href="#">The Fuel</a><span class="menu-line"></span></li>
+					<li class="move-up"><a href="#">The good</a><span class="menu-line"></span></li>
+					<li class="move-up"><a href="#">Coffee</a><span class="menu-line"></span></li>
+					<li class="move-up"><a href="#">Kits</a><span class="menu-line"></span></li>
+					<li class="move-up"><a href="#">How To</a><span class="menu-line"></span></li>
+				</ul>
+			</div>
+
+		<!--<div class="menu-main-overlay"></div>-->
+
+
+		<section id="landing">
+			<div id="background-img">
+				<div id="landing-content" class="row">
+					<h1>Fuel for Good</h1>
+					<h5 class="six columns">Drink good coffee, do good deeds. It’s that simple. With Booster Fuel, every cup of Intelligentsia coffee, bag of gourmet whole beans and glass of cold brew and cola helps fund Team One’s Do-Good Friday charities.</h5>
+
+					<button><a href="#coffee"></a>The coffee</button>
+				</div>
+			</div>
+		</section><!-- end landing -->
+
+
+		<section id="the-good">
+			<div id="the-good-content" class="ninety-width row">
+					<h2>The good we do</h2>
+				<div id="the-good-info" class="six columns">
+					<h5>There are multiple ways to get your good on. Coffee service with fresh-ground, fresh-brewed Intelligentsia coffee and a selection of gourmet tea can be ready for your next meeting. Kitchens are equipped with premium brewing equipment to offer the same throughout the day. And, for Team One events, Booster Fuel offers pour-over service in the mornings and cold brew and cola in the afternoon. Best of all, every cup gives a little more to charity.
+						<br>
+						<br>
+					Want to take your good to go? With every bag of the following gourmet roasts ordered and delivered to your desk, you’ll not only pay 33% less than at Intelligentsia, you’ll enjoy an added shot of good karma with $5 going back to the community.</h5>
+				</div>
+
+				<ul class="six columns">
+					<li class="three columns mobile-two"><img src="img/the-good/1.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/2.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/3.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/4.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/5.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/6.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/7.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/8.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/9.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/10.png"></li>
+					<li class="three columns mobile-two"><img src="img/the-good/11.png"></li>
+				</ul>
+			</div><!-- end ninety-width -->
+		</section><!-- end the-good -->
+
+
+		<section id="coffee">
+			<div class="row">
+				<div id="coffee-header" class="seven columns">
+					<h2>Coffee</h2>
+					<h5>There are multiple ways to get your good on. Coffee service with fresh-ground, fresh-brewed Intelligentsia coffee and a selection of gourmet tea can be ready.</h5>
+				</div><!-- end div -->
+			</div><!-- end row -->
+
+			<ul id="coffee-order" class="full-width">
+				<li class="blue">
+					<div class="coffee-info simpleCart_shelfItem">
+						<h5 class="item_name name">Organic Black Cat</h5>
+						<h3 class="item_price price">$15</h3>
+						<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+					</div>
+					<div class="overlay">
+						<img src="img/coffee/1.png">
+					</div>
+				</li>
+
+				<li class="orange">
+					<div class="coffee-info simpleCart_shelfItem">
+						<h5 class="item_name name">Organic Black Cat</h5>
+						<h3 class="item_price price">$15</h3>
+						<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+					</div>
+					<div class="overlay">
+						<img src="img/coffee/1.png">
+					</div>
+				</li>
+				<li class="green">
+					<div class="coffee-info simpleCart_shelfItem">
+						<h5 class="item_name name">Organic Black Cat</h5>
+						<h3 class="item_price price">$15</h3>
+						<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+					</div>
+					<div class="overlay">
+						<img src="img/coffee/1.png">
+					</div>
+				</li>
+				<li class="red">
+					<div class="coffee-info simpleCart_shelfItem">
+						<h5 class="item_name name">Organic Black Cat</h5>
+						<h3 class="item_price price">$15</h3>
+						<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+					</div>
+					<div class="overlay">
+						<img src="img/coffee/1.png">
+					</div>
+				</li>
+			</ul>
+		</section><!-- end coffee -->
+
+
+		<section id="kits">
+			<div id="kits-content">
+				<div id="kits-header" class="row">
+					<h2>Kits</h2>
+					<h5>Only pay 33% less than at Intelligentsia, you’ll enjoy an added shot of good karma with $5 going back to the community.</h5>
+				</div>
+
+				<div id="kits-purchase">
+					<div class="row">
+						<figure class="four columns"><img src="img/kits/1.png"></figure>
+
+						<figcaption class="eight columns">
+							<div class="kit-info">
+								<h4>Gift Set</h4>
+								<h5>Want to take your good to go? With every bag of the following gourmet roasts ordered and delivered to your desk, you’ll not.</h5>
+
+								<div class="kit-price simpleCart_shelfItem">
+									<h3 class="item_price price">$15</h3>
+									<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+								</div><!-- end add-cart -->
+							</div><!-- end kit-info -->
+						</figcaption>
+					</div><!-- end row -->
+
+					<div class="row">
+						<figure class="four columns"><img src="img/kits/1.png"></figure>
+
+						<figcaption class="eight columns">
+							<div class="kit-info">
+								<h4>Gift Set</h4>
+								<h5>Want to take your good to go? With every bag of the following gourmet roasts ordered and delivered to your desk, you’ll not.</h5>
+
+								<div class="kit-price simpleCart_shelfItem">
+									<h3 class="item_price price">$15</h3>
+									<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+								</div><!-- end add-cart -->
+							</div><!-- end kit-info -->
+						</figcaption>
+					</div><!-- end row -->
+
+					<div class="row">
+						<figure class="four columns"><img src="img/kits/1.png"></figure>
+
+						<figcaption class="eight columns">
+							<div class="kit-info">
+								<h4>Gift Set</h4>
+								<h5>Want to take your good to go? With every bag of the following gourmet roasts ordered and delivered to your desk, you’ll not.</h5>
+
+								<div class="kit-price simpleCart_shelfItem">
+									<h3 class="item_price price">$15</h3>
+									<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+								</div><!-- end add-cart -->
+							</div><!-- end kit-info -->
+						</figcaption>
+					</div><!-- end row -->
+
+					<div class="row">
+						<figure class="four columns"><img src="img/kits/1.png"></figure>
+
+						<figcaption class="eight columns">
+							<div class="kit-info">
+								<h4>Gift Set</h4>
+								<h5>Want to take your good to go? With every bag of the following gourmet roasts ordered and delivered to your desk, you’ll not.</h5>
+
+								<div class="kit-price simpleCart_shelfItem">
+									<h3 class="item_price price">$15</h3>
+									<a class="item_add" href="javascript:;"><button>Add to cart</button></a>
+								</div><!-- end add-cart -->
+							</div><!-- end kit-info -->
+						</figcaption>
+					</div><!-- end row -->
+				</div><!-- end kit-purchase -->
+			</div><!-- end kit-content -->
+		</section><!-- end kits -->
+
+
+		<section id="instructions">
+			<div id="instructions-content">
+				<div id="instructions-heading">
+					<h2>Instructions</h2>
+					<h5>There are multiple ways to get your good on. Coffee service with fresh-ground, fresh-brewed Intelligentsia coffee and a selection of gourmet tea can be ready.</h5>
+				</div>
+				
+				<div id="videos" class="ninety-width">
+					<ul class="row">
+						<li class="four columns">
+							<a href="#">
+								<h5>Video Title</h5>
+									<img class="play-icon" src="img/instructions/play-icon.png">
+								<img src="img/instructions/1.png">
+							</a>
+						</li>
+						<li class="four columns">
+							<a href="#">
+								<h5>Video Title</h5>
+									<img class="play-icon" src="img/instructions/play-icon.png">
+								<img src="img/instructions/2.png">
+							</a>
+						</li>
+						<li class="four columns">
+							<a href="#">
+								<h5>Video Title</h5>
+									<img class="play-icon" src="img/instructions/play-icon.png">
+								<img src="img/instructions/3.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<form>
+					<input type="text" placeholder="your.email@service.com">
+					<a href="#"><button>Contact Us</button></a>
+				</form>
+			</div>
+		</section><!-- end instructions -->
+
+		<footer>
+			<div id="team-one">
+				<p>Team One is a division of Saatchi & Saatchi North America Inc, a fully owned subsidiary of Publicis Groupe, the third largest global agency</p>
+
+				<ul>
+					<li><a href="#" target="_blank"><i class='icon-facebook'></i><span></span></a></li>
+
+					<li><a href="#" target="_blank"><i class='icon-twitter'></i><span id="twitter"></span></a></li>
+
+					<li><a href="#" target="_blank"><i class='icon-instagram'></i><span id="instagram"></span></a></li>
+				</ul>
+			</div>
+
+			<div id="legal">
+				<p>© Team One USA 2015</p>
+
+				<ul>
+					<li><a href="#">TERMS & CONDITIONS</a></li>
+					<li><a href="#">PRIVACY POLICY</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- <javascript> -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="js/simpleCart.min.js"></script>
+		<script src="js/index.js"></script>
+	    <script>
+	        simpleCart({
+	            checkout: { 
+	            type: "SendForm" , 
+	            url: "https://formkeep.com/f/67f26f1c4ea3" ,
+	            method: "POST" , 
+	            extra_data: {} ,
+	            cartStyle: "div"
+	            } 
+	        });
+	    </script>
+
+	</body>
+</html>
+
