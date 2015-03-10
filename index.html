@@ -31,6 +31,39 @@
                 		</ul>
                 	</label>
                 </li>
+
+                <!-- Hamburger mobile menu -->
+		        <div id="menu-open" class="ui button-square"> 
+					<span id="icon-toggle" class="icon-box-toggle ef-1"> 	
+						<i class="icon-line-top"></i>
+						<i class="icon-line-center"></i>
+						<i class="icon-line-bottom"></i> 
+					</span>
+				</div>
+
+					<div class="menu-main-wrap">  
+
+						<ul class="ui menu menu-effect_1"> 
+							<div id="cart-wrapper">
+								<li id="mobile-cart">
+				                	<label id="cart-icon" for="showForm" class="showFormLabel">
+				                		<ul>
+					                		<li><span class="icon-cart"></span><li>
+					                		<li><p>Cart</p></li>
+					                		<li><span class="simpleCart_quantity"></span></li>
+					                		<li><span id="triangle"></span></li>
+				                		</ul>
+				                	</label>
+				                </li>
+				            </div>
+
+							<li class="move-up"><a href="#">The Fuel</a><span class="menu-line"></span></li>
+							<li class="move-up"><a href="#">The good</a><span class="menu-line"></span></li>
+							<li class="move-up"><a href="#">Coffee</a><span class="menu-line"></span></li>
+							<li class="move-up"><a href="#">Kits</a><span class="menu-line"></span></li>
+							<li class="move-up"><a href="#">How To</a><span class="menu-line"></span></li>
+						</ul>
+					</div>
                 <div id="nav" class="row">
                 	<ul>
                         <li id="nav-fuel" class="nav-item"><a href="#fuel">The Fuel</a></li>
@@ -43,16 +76,14 @@
             </ul>
         </nav>
 
-        <div class="modal-bg"></div><!-- modal transparent background -->
         <input type="checkbox" name="showForm" id="showForm" class="showForm">
 
         <div class="form">
         	<div id="form-content">
 	            <span class="simpleCart_items"></span>
-	            <label for="showForm" class="closeFormLabel">X</label>
-	            <!--<button type="submit" id="remove-button" class="sendForm">Remove</button>-->
+	            <label for="showForm" class="closeFormLabel"></label>
 
-	            <form id="cart-form">
+	            <div id="cart-form">
 	                    <h5>Your Information</h5>
 	                    <input type="text" name="name" placeholder="Your name" required>
 	                    <input type="email" name="email" placeholder="Your email" required>
@@ -63,46 +94,11 @@
 	                
 	                <button type="submit" href="javascript:;" class="simpleCart_checkout" id="checkout-button" class="sendForm"><span class="icon-checkmark"></span>Checkout</button>
 	                <button type="submit" href="javascript:;" class="simpleCart_empty" id="empty-button" class="sendForm"><span class="icon-trash"></span>Empty Cart</button>
-	            </form>
+	            </div>
 
 	            <h5>Your coffee will be avalible every Thursday for pick-up</h5>
 	        </div>
         </div>
-
-        <!-- Hamburger mobile menu -->
-        <div id="menu-open" class="ui button-square"> 
-			<span id="icon-toggle" class="icon-box-toggle ef-1"> 	
-				<i class="icon-line-top"></i>
-				<i class="icon-line-center"></i>
-				<i class="icon-line-bottom"></i> 
-			</span>
-		</div>
-
-			<div class="menu-main-wrap">  
-
-				<ul class="ui menu menu-effect_1"> 
-					<div id="cart-wrapper">
-						<li id="mobile-cart">
-		                	<label id="cart-icon" for="showForm" class="showFormLabel">
-		                		<ul>
-			                		<li><span class="icon-cart"></span><li>
-			                		<li><p>Cart</p></li>
-			                		<li><span class="simpleCart_quantity"></span></li>
-			                		<li><span id="triangle"></span></li>
-		                		</ul>
-		                	</label>
-		                </li>
-		            </div>
-
-					<li class="move-up"><a href="#">The Fuel</a><span class="menu-line"></span></li>
-					<li class="move-up"><a href="#">The good</a><span class="menu-line"></span></li>
-					<li class="move-up"><a href="#">Coffee</a><span class="menu-line"></span></li>
-					<li class="move-up"><a href="#">Kits</a><span class="menu-line"></span></li>
-					<li class="move-up"><a href="#">How To</a><span class="menu-line"></span></li>
-				</ul>
-			</div>
-
-		<!--<div class="menu-main-overlay"></div>-->
 
 
 		<section id="landing">
@@ -112,6 +108,10 @@
 					<h5 class="six columns">Drink good coffee, do good deeds. It’s that simple. With Booster Fuel, every cup of Intelligentsia coffee, bag of gourmet whole beans and glass of cold brew and cola helps fund Team One’s Do-Good Friday charities.</h5>
 
 					<button><a href="#coffee"></a>The coffee</button>
+				</div>
+
+				<div class="mouse-icon">
+					<div class="wheel"></div>
 				</div>
 			</div>
 		</section><!-- end landing -->
@@ -316,7 +316,7 @@
 
 		<footer>
 			<div id="team-one">
-				<p>Team One is a division of Saatchi & Saatchi North America Inc, a fully owned subsidiary of Publicis Groupe, the third largest global agency</p>
+				<p>A Team One Launch an Idea Project</p>
 
 				<ul>
 					<li><a href="#" target="_blank"><i class='icon-facebook'></i><span></span></a></li>
@@ -326,21 +326,12 @@
 					<li><a href="#" target="_blank"><i class='icon-instagram'></i><span id="instagram"></span></a></li>
 				</ul>
 			</div>
-
-			<div id="legal">
-				<p>© Team One USA 2015</p>
-
-				<ul>
-					<li><a href="#">TERMS & CONDITIONS</a></li>
-					<li><a href="#">PRIVACY POLICY</a></li>
-				</ul>
-			</div>
 		</footer>
 
 		<!-- <javascript> -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/simpleCart.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="js/mobile-menu.js"></script>
 	    <script>
 	        simpleCart({
 	            checkout: { 
